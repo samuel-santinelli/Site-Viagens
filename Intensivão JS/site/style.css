@@ -1,23 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root{
-    --main-color:#d3ad7f;
+    --main-color: #1C494B;
     --black:#212221;
-    --bg:#010103;
+    --bg:#0D0F0D;
     --border:.1rem solid rgba(255,255,255,.3);
 }
 
 *{
     font-family: 'Roboto', sans-serif;
-    margin:0; padding:0;
+    margin:0; 
+    padding:0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     outline: none; 
     border:none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: .2s linear;
     color: #ffff;
-    font-size: 1.7rem;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    
 }
 
 html{
@@ -42,7 +45,7 @@ html::-webkit-scrollbar-thumb{
 
 body{
     background: var(--bg);
-       outline: none; 
+    outline: none; 
     border:none;
 }
 
@@ -59,7 +62,7 @@ section{
 }
 
 .heading span{
-    color:var(--main-color);
+    color: var(--main-color);
     text-transform: uppercase;
 }
 
@@ -71,13 +74,21 @@ header{
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    border-bottom: var(--border);
-    padding:1.5rem 7%;
-    background-color: #88AED1;
+    border-bottom: #aaaa solid 1px;
+    padding:1.2rem 7%;
+    background-color: transparent;
+   
 }
+#menu-btn {
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+  }
 
-.logo-title{
-    font-size: 1.4rem;
+.logo{
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 header .content h3{
@@ -88,7 +99,7 @@ header .content h3{
 
 header .navbar a{
     margin:0 1rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color:#fff;
     display: inline-block;
 }
@@ -96,43 +107,37 @@ header .navbar a{
 .navbar{
     margin-left: auto;
     margin-right: auto;
-    background-color: transparent;
+    
 }
 
 header .navbar a:hover{
-    color:var(--main-color);
-    border-bottom: .1rem solid var(--main-color);
-    padding-bottom: .5rem;
+    border-bottom: #fff solid 1px;
 }
 
 
 /* Banner começa aqui */
-
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 72px;
-}
-
 .banner{
-    border-radius: 25px;
-    width: 1850px;
-    min-height: 100vh;
+    border-radius: 20px;
+    width: 1780px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 85px;
     display: flex;
     align-items: center;
-    background: url("images/menu.jpg") no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../images/home-bg.jpg) no-repeat;
+    background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
     background-size: cover;
     background-position: center;
 }
 
-
-.home .content{
+.banner .content{
     max-width: 60rem;
 }
 
 
-.home .content p{
+.banner .content p{
     font-size: 2rem;
     font-weight: lighter;
     line-height: 1.8;
@@ -145,19 +150,153 @@ h3{
 }
 
 p{
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: lighter;
-    line-height: 1.8;
-    padding:1rem 0;
+    line-height: 1.2;
     color:#eee;
+    text-indent: 1rem;
+ 
 }
 
 .btn{
     margin-top: 1rem;
     display: inline-block;
-    padding:.9rem 3rem;
+    padding: 1rem 3rem;
     font-size: 1.7rem;
-    color:#fff;
-    background: var(--main-color);
+    color: #ffffff;
+    background: none;
+    border: solid 2px #88AED1;
+    border-radius: 10px;
     cursor: pointer;
+}
+
+/* Banner termina aqui */
+
+.book-form {
+    width: 80%;
+    margin: 1rem auto;
+    margin-top: -5rem;
+    background: #222;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
+    box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
+    padding: 3rem 2rem;
+  }
+  
+  .book-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .book-form form .inputBox {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 25rem;
+    flex: 1 1 25rem;
+  }
+  
+  .book-form form .inputBox span {
+    font-size: 1.4rem;
+    color: #aaa;
+  }
+  
+  .book-form form .inputBox input {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    border-radius: 5rem;
+    border: 0.2rem solid #88AED1;
+    font-size: 1.6rem;
+    color: #aaa;
+    text-transform: none;
+    background: none;
+    margin-top: 1rem;
+  }
+  
+  .book-form form .btn {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 15rem;
+            flex: 1 1 15rem;
+  }
+
+
+.about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+  
+  .about .video-container {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 42rem;
+    flex: 1 1 42rem;
+  }
+  
+  .about .video-container video {
+    border-radius: 1rem;
+    width: 100%;
+  }
+  
+  .about .video-container .controls {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .about .video-container .controls span {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: .7rem;
+  }
+  
+  .about .video-container .controls span:hover {
+    background: #1C494B;
+  }
+  
+  .about .content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 42rem;
+    flex: 1 1 42rem;
+    margin-bottom: 5rem;
+  }
+  
+  .about .content span {
+    color: #29d9d5;
+    font-size: 2rem;
+  }
+  
+  .about .content h3 {
+    color: #fff;
+    font-size: 4rem;
+    margin-top: .5rem;
+  }
+  
+  .about .content p {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #aaa;
+  }
+
+  .cards-viagens{
+    height: 500px;
+    width: 1770px;
+    background: var(--main-color);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
 }

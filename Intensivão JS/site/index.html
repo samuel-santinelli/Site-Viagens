@@ -5,31 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Site de Viagens</title>
 </head>
         <body>
-            <header>
-                <a href="#" class="logo"> <i class="logo-title"></i>airnelli</a>
-                <nav class="navbar">
-                    <a href="#home">inicio</a>
-                    <a href="#about">sobre</a>
-                    <a href="#menu">menu</a>
-                    <a href="#products">produtos</a>
-                    <a href="#review">avaliações</a>
-                    <a href="#contact">blog</a>
-                    <a href="#blogs">contato</a>
-                </nav>
-            </header>
+            <header class="header">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <!-- Conteudo da Logo -->
+                <a href="#" class="logo"> <i class="fas fa-paper-plane"></i>airnelli</a>
+                <!-- Conteudo da Logo acaba aqui -->
 
-                <main>
+                <!-- Conteudo do Menu -->
+               <nav class="navbar">
+                    <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">home</a>
+                    <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">about</a>
+                    <a data-aos="zoom-in-left" data-aos-delay="600" href="#destination">destination</a>
+                    <a data-aos="zoom-in-left" data-aos-delay="750" href="#services">services</a>
+                    <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">gallery</a>
+                    <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">blogs</a>
+    </nav>
+
+    <a data-aos="zoom-in-left" data-aos-delay="1300" href="#book-form" class="btn">agende agora</a>
+
+            </header>
+                <!-- Conteudo do Menu acaba aqui -->
+
+           
+                <!-- Conteudo do Banner -->
                     <section class="banner" id="banner">
                          <div class="content">
                           <h3>As melhores ferias da sua vida</h3>
-                             <p>Está cansado de viver sempre a mesma rotina? viaje e esqueça todos os seus problemas</p>
+                             <p>Está cansado de viver sempre a mesma rotina? viaje e esqueça todos os seus problemas,</p> <p>e principalmente, Divirta-se!</p>
                              <a href="#" class="btn">Adquira seu passaporte</a>
                          </div>
+                         
                      </section>
-                </main>
+                     
+                     <section class="book-form" id="book-form">
+
+                        <form action="">
+                            <div data-aos="zoom-in" data-aos-delay="150" class="inputBox">
+                                <span>para onde?</span>
+                                <input type="text" placeholder="place name" value="">
+                            </div>
+                            <div data-aos="zoom-in" data-aos-delay="300" class="inputBox">
+                                <span>quando?</span>
+                                <input type="date" value="">
+                            </div>
+                            <div data-aos="zoom-in" data-aos-delay="450" class="inputBox">
+                                <span>quantos?</span>
+                                <input type="number" placeholder="Numero de viajantes" value="">
+                            </div>
+                            <input data-aos="zoom-in" data-aos-delay="600" type="submit" value="encontre agora" class="btn">
+                        </form>
+                    
+                    </section>
+         
+                
+                <!-- Conteudo do Banner acaba aqui -->
+
+                <!-- Conteudo da presentation começa aqui -->
+                <section class="about" id="about">
+
+                    <div class="video-container" data-aos="fade-right" data-aos-delay="300">
+                        <video src="images/about-vid-1.mp4" muted autoplay loop class="video"></video>
+                        <div class="controls">
+                            <span class="control-btn" data-src="images/about-vid-1.mp4"></span>
+                            <span class="control-btn" data-src="images/about-vid-2.mp4"></span>
+                            <span class="control-btn" data-src="images/about-vid-3.mp4"></span>
+                        </div>
+                    </div>
+                
+                    <div class="content" data-aos="fade-left" data-aos-delay="600">
+                        <span>Porque nos escolher?</span>
+                        <h3>A natureza espera por você</h3>
+                        <p>para conhecer o mundo, precisa dar um primeiro passo, então chegou a hora,</p> <p> viaje conosco e de um primeiro passo para a melhor experiencia da sua vida</p>
+                        <a href="#" class="btn">Mais informações</a>
+                    </div>
+                
+                </section>
             <footer></footer>
         </body>
     <script src="src/main.js" defer></script>
