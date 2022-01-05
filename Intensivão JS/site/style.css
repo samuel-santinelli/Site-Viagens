@@ -125,8 +125,8 @@ header .navbar a:hover{
     margin-top: 85px;
     display: flex;
     align-items: center;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../images/home-bg.jpg) no-repeat;
-    background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/home-bg.jpg) no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url("images/caverna.jpg") no-repeat;
+    background: linear-gradient(rgba(136, 174, 209, 0.7), rgba(17, 17, 17, 0.7)), url("images/caverna.jpg") no-repeat;
     background-size: cover;
     background-size: cover;
     background-position: center;
@@ -140,7 +140,7 @@ header .navbar a:hover{
 .banner .content p{
     font-size: 2rem;
     font-weight: lighter;
-    line-height: 1.8;
+    line-height: 1.4;
     padding:1rem 0;
     color:#eee;
 }
@@ -152,9 +152,8 @@ h3{
 p{
     font-size: 2.4rem;
     font-weight: lighter;
-    line-height: 1.2;
     color:#eee;
-    text-indent: 1rem;
+    font-family: 'Poppins', sans-serif;
  
 }
 
@@ -220,8 +219,8 @@ p{
   
   .book-form form .btn {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 15rem;
-            flex: 1 1 15rem;
+    -ms-flex: 1 1 15rem;
+     flex: 1 1 15rem;
   }
 
 
@@ -287,7 +286,7 @@ p{
   }
   
   .about .content p {
-    padding: 1rem 0;
+    padding: 2px;
     font-size: 1.4rem;
     color: #aaa;
   }
@@ -299,4 +298,63 @@ p{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
+}
+
+/* Conteudo do Cronometro */
+
+.banner-cronometro {
+  height: 400px;
+  margin-bottom: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../images/banner-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  background-attachment: fixed;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-cronometro .content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.banner-cronometro .content span {
+  font-size: 2rem;
+  color: #29d9d5;
+}
+
+.banner-cronometro .content h3 {
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.banner-cronometro .content p {
+  max-width: 60rem;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+
+.title{
+  font-size: calc(7px + 1vw);
+}
+
+.countdown{
+  display: flex;
+  width: 60vw;
+  justify-content: space-between;
+}
+
+.countdown h1{
+    font-size: calc(8px + 5vw);
+    text-shadow: 0 0 10px whitesmoke;
 }
