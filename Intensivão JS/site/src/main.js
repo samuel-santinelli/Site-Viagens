@@ -54,7 +54,7 @@ const contagemRegressiva = (tempo) => {
 
 const tempoRestante = () => {
     // 1 de Janeiro de 1970 ele começa a contar os milisegundos (Data de referência do js)
-    const dataEvento = new Date ('2022-03-01 20:00:00');
+    const dataEvento = new Date ('2022-02-17 20:00:00');
     const dataHoje = Date.now();
     return Math.floor((dataEvento - dataHoje) / 1000);
 }

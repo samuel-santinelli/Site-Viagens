@@ -303,8 +303,8 @@ p{
 /* Conteudo do Cronometro */
 
 .banner-cronometro {
-  height: 400px;
-  margin-bottom: 100px;
+  height: 350px;
+  margin-bottom: 20px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../images/banner-bg.jpg) no-repeat;
   background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/banner-bg.jpg) no-repeat;
   background-size: cover;
@@ -322,7 +322,6 @@ p{
   align-items: center;
   justify-content: center;
   text-align: center;
-
 }
 
 .banner-cronometro .content span {
@@ -358,3 +357,102 @@ p{
     font-size: calc(8px + 5vw);
     text-shadow: 0 0 10px whitesmoke;
 }
+
+/* Seção de destino */
+
+.destination .box-container{
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-columns: (minmax(27rem, 1fr))[auto-fit];
+  /* grid-template-columns -> determina o numero das larguras de uma coluna */
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr)); 
+  gap: 1.5rem;
+}
+
+.destination .box-container .box{
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #222;
+}
+
+.destination .box-container .box .image{
+  height: 20rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.destination .box-container .box .image img{
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+
+} 
+
+.destination .box-container .box:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.destination .box-container .box .content{
+  padding: 2rem;
+  text-align: center;
+}
+
+.destination .box-container .box .content .stars{
+  padding: 1.0rem;
+}
+
+
+.destination .box-container .box .content .stars{
+  font-size: 1.7rem;
+  color: var(--main-color);
+}
+
+.destination .box-container .box .content .price{
+  color:#fff;
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+
+.destination .box-container .box .content .price span{ 
+  text-decoration: line-through;
+  font-weight: lighter;
+  font-size: 1.2rem;
+
+}
+
+
+.destination .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.destination .box-container .box .content p {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+
+.destination .box-container .box .content a {
+  font-size: 1.7rem;
+  color: #76dad8;
+}
+
+.destination .box-container .box .content a:hover i {
+  padding-left: 1rem;
+}
+
+.destination .box-container .box .content a i {
+  padding-right: .5rem;
+}
+
+.services .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+}
+
