@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:wght@100&display=swap');
 
 :root{
     --main-color: #1C494B;
@@ -456,3 +457,64 @@ p{
   gap: 1.5rem;
 }
 
+/* Conteudo da galeria começa aqui */
+
+.gallery .box-container {
+  -webkit-columns: 3 25rem;
+  columns: 3 25rem;
+  -webkit-column-gap: 1.5rem;
+  column-gap: 1.5rem;
+
+}
+
+.gallery .box-container .box {
+  margin-bottom: 1rem;
+  -webkit-column-break-inside: avoid;
+   break-inside: avoid;
+   background-color: #ffffff;
+  
+}
+
+.gallery .box-container .box  {
+  width: 450px;
+  height: 450px;
+  margin-bottom: 1rem;
+  margin-left: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+
+.gallery .box-container .box {
+  font-size: 1.2rem;
+  color: #000;
+  
+}
+
+.gallery .box-container .box h3 {
+  margin-top: .5rem;
+  font-size: 3.5rem;
+  color: #000;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Ephesis', cursive;
+}
+
+.image-memories{
+  height: 300px;
+  width: 350px;
+  margin-left: 50px;
+  margin-top: 20px;
+ 
+}
+
+.gallery .heading h1 {
+  color: #000;
+}
+
+.gallery .heading span {
+  color: #000;
+  font-style: ;
+}
+
+
+/* Conteudo da galeria encerra aqui */
