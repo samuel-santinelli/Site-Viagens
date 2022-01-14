@@ -73,3 +73,10 @@ window.addEventListener('scroll', function (){
     header.classList.toggle('scrolling-active', windowPosition);
 
 });
+
+// Manipulando o calendario para não haver a possibilidade do usuario escolher uma data antiga para viajar, assim escolhendo sempre uma data de 7 dias depois 
+var today = new Date();
+today.setDate(today.getDate() + 7); 
+today = today.toISOString().split('T')[0];
+
+document.getElementsByName("date")[0].setAttribute('min', today);
