@@ -61,10 +61,12 @@ const tempoRestante = () => {
 
 contagemRegressiva(tempoRestante());
 
+// Mudando a cor de fundo na parte gallery do site
 window.onscroll = function (evento) {  
     document.getElementById("gallery").style.backgroundColor = "#f8f8ff";
 }
 
+// Mudando a cor dos objetos em um momento especifico da pagina(gallery)
 window.addEventListener('scroll', function (){
     let header = document.querySelector('header')
     let windowPosition = window.scrollY > 2930;
