@@ -63,7 +63,11 @@ contagemRegressiva(tempoRestante());
 
 window.onscroll = function (evento) {  
     document.getElementById("gallery").style.backgroundColor = "#f8f8ff";
+}
 
+window.addEventListener('scroll', function (){
+    let header = document.querySelector('header')
+    let windowPosition = window.scrollY > 2930;
+    header.classList.toggle('scrolling-active', windowPosition);
 
-
-  } 
+});

@@ -516,5 +516,32 @@ p{
   
 }
 
+.scrolling-active{
+  font-weight: bolder;
+  box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+  color: #000;
+ 
+}
+
+.scrolling-active a {
+  color: #000 ;
+}
+
+.scrolling-active i {
+  color: #000 ;
+}
+
+.scrolling-active .navbar a {
+  color: #000;
+  font-size: 2.1rem;
+  transition: 1s;
+}
+
+.scrolling-active .navbar a:hover{
+  border-bottom: #000 solid 1px;
+}
+.scrolling-active .btn{
+  color: #000;
+}
 
 /* Conteudo da galeria encerra aqui */
