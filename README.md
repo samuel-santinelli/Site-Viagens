@@ -1,7 +1,7 @@
 # Airnelli Viagens 
 ![bannerAirnelli](https://user-images.githubusercontent.com/89052474/148250303-ffe25ee6-9591-4b3a-9d37-973b29bd03b3.PNG)
 
-> A Airnelli viagens se trata de um site que estou desenvolvendo para treinar nessas férias minhas habilidades no JavaScript e Bootstrap, é um site de companhia de viajens que busca a modernidade e oferecer a melhor experiencia para seus clientes.
+> A Airnelli viagens se trata de um site que estou desenvolvendo para treinar nessas férias minhas habilidades no JavaScript e novas ferramentes do CSS3, é um site de companhia de viajens que busca a modernidade e oferecer a melhor experiencia para seus clientes.
 
 ## Ferramentas que serão utilizadas
   <div style="display: inline_block">
