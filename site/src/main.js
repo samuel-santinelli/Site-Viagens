@@ -1,4 +1,5 @@
 "use scrict";
+// import { UseState } from 'react';
 
 let navbar = document.querySelector('.header .navbar');
 
