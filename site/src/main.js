@@ -81,3 +81,30 @@ today.setDate(today.getDate() + 7);
 today = today.toISOString().split('T')[0];
 
 document.getElementsByName("date")[0].setAttribute('min', today);
+
+// Manipulando a modal de cadastro
+function iniciaModal(modalID) {
+    if(localStorage.fechaModal !== modalID) {
+    const modal = document.getElementById(modalID);
+    if(modal){
+        modal.classList.add('mostrar')
+        modal.addEventListener('click', (event) => {
+            if(event.target.id == modalID || event.target.className == 'fechar'){
+                modal.classList.remove('mostrar');
+                localStorage.fechaModal = modalID;
+                }
+            });
+         }
+    }
+}
+
+
+    const logo = document.querySelector('.banner .btn');
+    logo.addEventListener('click', () => iniciaModal('modal-promocao'));
+
+    document.addEventListener('scroll', () => {
+        if(window.pageXOffset > 800){
+        }
+    });
+
+
