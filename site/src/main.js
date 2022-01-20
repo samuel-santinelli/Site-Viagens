@@ -98,7 +98,7 @@ function iniciaModal(modalID) {
     }
 }
 
-
+// Após o click do botão e do banner deverá abrir a modal
     const logo = document.querySelector('.banner .btn');
     logo.addEventListener('click', () => iniciaModal('modal-promocao'));
 
