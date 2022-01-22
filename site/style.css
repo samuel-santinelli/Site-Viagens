@@ -657,6 +657,32 @@ p{
   background:none;
 }
 
+
+.contact .button{
+  width: 30%;
+  padding: 1.2rem 1.4rem;
+  border-radius: 5rem;
+  border: 0.2rem solid #88AED1;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: bolder;
+  text-transform: none;
+  background: none;
+  margin-top: 1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.contact .button:hover{
+  width: 200px;
+  height: 45px;
+  background-color: #88AED1;
+  color: #fff;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
 /* Conteudo de contatos termina aqui */
 
 .modal-container{
