@@ -159,10 +159,9 @@ p{
 }
 
 .btn{
-    margin-top: 1rem;
     display: inline-block;
     padding: 1rem 3rem;
-    font-size: 1.7rem;
+    font-size: 2.0rem;
     color: #ffffff;
     background: none;
     border: solid 2px #88AED1;
@@ -655,9 +654,6 @@ p{
 
 /* Conteudo de contatos termina aqui */
 
-/* Conteudo da modal começa aqui */
-
-
 .modal-container{
   width: 100vw;
   height: 100vh;
@@ -671,33 +667,11 @@ p{
   align-items: center;
 }
 
-.modal-container input{
-  width: 250px;
-  color: #000;
-  border: solid 1px #88AED1;
-  height: 35px;
-  background: none;
-  text-indent: 1.2rem;
-  margin: 10px;
-}
-
-.modal-container .btn{
-  width: 185px;
-  height: 45px;
-  background-color: #88AED1;
-  color: #fff;
-  text-indent: 25px;
-}
-
-.modal-container .mostrar{
-  display: flex;
-}
-
 .modal{
   background: white;
-  width: 60%;
-  height: 25%;
-  max-width: 300px;
+  width: 35%;
+  height: 35%;
+  min-width: 300px;
   padding: 40px;
   border: 10px solid #88AED1;
   box-shadow: 0 0 0 10px white;
@@ -720,13 +694,50 @@ p{
   cursor: pointer;
 }
 
+.modal-container input{
+  width: 250px;
+  color: #000;
+  border: solid 1px #88AED1;
+  height: 35px;
+  background: none;
+  text-indent: 1.2rem;
+  margin: 10px;
+  font-size: 1.7rem;
+}
+
+.modal-container.mostrar{
+  display: flex;
+}
+
+.modal-container .button{
+  width: 200px;
+  height: 45px;
+  background-color: #88AED1;
+  color: #fff;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.modal-container .button:hover{
+  width: 200px;
+  height: 45px;
+  background-color: #88AED1;
+  color: #fff;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
 .mostrar .modal {
   animation: modal .3s;
 }
 
 h3{
-  color: #000;
-  font-size: 3.0rem;
+  color: #88AED1;
+  font-weight: bold;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 @keyframes modal {

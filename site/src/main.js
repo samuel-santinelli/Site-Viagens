@@ -83,28 +83,38 @@ today = today.toISOString().split('T')[0];
 document.getElementsByName("date")[0].setAttribute('min', today);
 
 // Manipulando a modal de cadastro
-function iniciaModal(modalID) {
-    if(localStorage.fechaModal !== modalID) {
+// Função para chamar a modal
+// classList.add - lista todas as classes 
+// .target - mostra o elemento aonde o click foi feito
+// target.className - mostra o elemento através de uma class
+// localStorage - fica armazenado se o usuario interagiu com tal elemento 
+function iniciaModal(modalID){
+    if(localStorage.fechaModal !== modalID){
     const modal = document.getElementById(modalID);
-    if(modal){
-        modal.classList.add('mostrar')
-        modal.addEventListener('click', (event) => {
-            if(event.target.id == modalID || event.target.className == 'fechar'){
-                modal.classList.remove('mostrar');
-                localStorage.fechaModal = modalID;
+        if(modal){
+            modal.classList.add('mostrar');
+            modal.addEventListener('click', (evento) => {
+                if(evento.target.id == modalID || evento.target.className == 'fechar') {
+                    modal.classList.remove('mostrar');
+                    // localStorage.fechaModal = modalID;
                 }
             });
-         }
+        }
     }
 }
+const logo = document.querySelector('.banner', '.button');
+logo.addEventListener('click', () =>  iniciaModal('modal-promocao'));
+
+document.addEventListener('scroll', () =>{
+    if(window.pageXOffset > 800) {
+        iniciaModal('modal-promocao');
+    }
+});
 
 // Após o click do botão e do banner deverá abrir a modal
-    const logo = document.querySelector('.banner .btn');
-    logo.addEventListener('click', () => iniciaModal('modal-promocao'));
 
-    document.addEventListener('scroll', () => {
-        if(window.pageXOffset > 800){
-        }
-    });
+
+
+
 
 
