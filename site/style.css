@@ -665,7 +665,7 @@ p{
   border: 0.2rem solid #88AED1;
   font-size: 1.8rem;
   color: #fff;
-  font-weight: bolder;
+
   text-transform: none;
   background: none;
   margin-top: 1rem;
@@ -675,7 +675,7 @@ p{
 
 .contact .button:hover{
   width: 200px;
-  height: 45px;
+
   background-color: #88AED1;
   color: #fff;
   text-align: center;
