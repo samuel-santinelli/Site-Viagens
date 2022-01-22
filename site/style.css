@@ -94,7 +94,7 @@ header{
 header .content h3{
     font-size: 2rem;
     color:var(--black);
-    padding-bottom: .5rem;
+    padding-bottom: .8rem;
 }
 
 header .navbar a{
@@ -295,6 +295,11 @@ p{
     padding: 2px;
     font-size: 1.4rem;
     color: #aaa;
+  
+  }
+  
+  .about .content .btn{
+    margin-top: 10px;
   }
 
   .cards-viagens{
@@ -732,7 +737,7 @@ p{
   animation: modal .3s;
 }
 
-h3{
+.modal-container h3{
   color: #88AED1;
   font-weight: bold;
   font-size: 3.5rem;
