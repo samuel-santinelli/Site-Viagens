@@ -1,420 +1,394 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="icon" href="images/icon-travel.png">
-    <title>Site de Viagens</title>
-</head>
-        <body>
-            <header class="header">
-                <div id="menu-btn" class="fas fa-bars"></div>
-                <!-- Conteudo da Logo -->
-                <a href="#" class="logo"> <i class="fas fa-paper-plane"></i>airnelli</a>
-                <!-- Conteudo da Logo acaba aqui -->
-
-                <!-- Conteudo do Menu -->
-               <nav class="navbar">
-                    <a data-aos="zoom-in-left" data-aos-delay="300" href="#banner">inicio</a>
-                    <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">Apresentação</a>
-                    <a data-aos="zoom-in-left" data-aos-delay="600" href="#destination">destino</a>
-                    <a data-aos="zoom-in-left" data-aos-delay="750" href="#services">serviços</a>
-                    <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">galeria</a>
-                    <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">blogs</a>
-    </nav>
-
-    <a data-aos="zoom-in-left" data-aos-delay="1300" class="btn">agende agora</a>
-
-            </header>
-                <!-- Conteudo do Menu acaba aqui -->
-
-           
-                <!-- Conteudo do Banner -->
-                    <section class="banner" id="banner">
-                         <div class="content">
-                          <h3>As melhores ferias da sua vida</h3>
-                             <p>Está cansado de viver sempre a mesma rotina? viaje e esqueça todos os seus problemas, e principalmente, Divirta-se!</p>
-                             <input class="btn" type="button" value="Adquira seu passaporte">
-                         </div>
-                         
-                     </section>
-                     
-                     <section class="book-form" id="book-form">
-
-                        <form action="">
-                            <div data-aos="zoom-in" data-aos-delay="150" class="inputBox">
-                                <span>para que lugar?</span>
-                                <input type="text" placeholder="Digite o nome de um lugar" value="">
-                            </div>
-                            <div data-aos="zoom-in" data-aos-delay="300" class="inputBox" >
-                                <span>quando?</span>
-                                <input id="no-spin" name="date" type="date" value="">
-                            </div>
-                            <div data-aos="zoom-in" data-aos-delay="450" class="inputBox">
-                                <span>quantos Viajantes?</span>
-                                <input type="number" placeholder="Numero de viajantes" value="" min="1" max="10">
-                            </div>
-                            <input class="btn" type="button" value="Encontre agora">
-                        </form>
-                    
-                    </section>
-         
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="icon" href="images/icon-travel.png">
+        <title>Site de Viagens</title>
+    </head>
+    <body>
+        <header class="header">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <!-- Conteudo da Logo -->
+            <a href="#" class="logo"> <i class="fas fa-paper-plane"></i>airnelli</a>
+            <!-- Conteudo da Logo acaba aqui -->
                 
-                <!-- Conteudo do Banner acaba aqui -->
+            <!-- Conteudo do Menu -->
+            <nav class="navbar">
+                <!-- Adicionado link de contato ao menu de navegação. --> <!-- Adicionado por Wendel Ortiz. -->
+                <a data-aos="zoom-in-left" data-aos-delay="300" href="#banner">inicio</a>
+                <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">Apresentação</a>
+                <a data-aos="zoom-in-left" data-aos-delay="600" href="#destination">destino</a>
+                <a data-aos="zoom-in-left" data-aos-delay="750" href="#services">serviços</a>
+                <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">galeria</a>
+                <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">blogs</a>
+                <a data-aos="zoom-in-left" data-aos-delay="1150" href="#contact">Contato</a>
+            </nav>
+            <a data-aos="zoom-in-left" data-aos-delay="1300" class="btn">agende agora</a>
+            <!-- Conteudo do Menu acaba aqui -->
+        </header> 
 
-                <!-- Conteudo da presentation começa aqui -->
-                <section class="about" id="about">
+            <!-- Conteudo do Banner -->
+            <section class="banner" id="banner">
+                <div class="content">
+                    <h3>As melhores ferias da sua vida</h3>
+                    <p>Está cansado de viver sempre a mesma rotina? viaje e esqueça todos os seus problemas, e principalmente, Divirta-se!</p>
+                    <input class="btn" type="button" value="Adquira seu passaporte">
+                </div>
+            </section>
+            <section class="book-form" id="book-form">
 
-                    <div class="video-container" data-aos="fade-right" data-aos-delay="300">
-                        <video src="images/about-vid-1.mp4" muted autoplay loop class="video"></video>
-                        <div class="controls">
-                            <span class="control-btn" data-src="images/about-vid-1.mp4"></span>
-                            <span class="control-btn" data-src="images/about-vid-2.mp4"></span>
-                            <span class="control-btn" data-src="images/about-vid-3.mp4"></span>
+                <!-- Adicionado labels nos lugares de span, ao clicar o input foca automáticamente - Por Wendel Ortiz. -->
+                <form action="">
+                    <div data-aos="zoom-in" data-aos-delay="150" class="inputBox">
+                        <label style="font-size: 1.4rem; color: #aaa;" for="lugar">Para onde?</label>
+                        <input type="text" id="lugar" placeholder="Digite o nome de um lugar" value="">
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="300" class="inputBox" >
+                        <label style="font-size: 1.4rem; color: #aaa;" for="no-spin">Quando?</label>
+                        <input id="no-spin" name="date" type="date" value="">
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="450" class="inputBox">
+                        <label style="font-size: 1.4rem; color: #aaa;" for="viajantes">Quantos viajantes?</label>
+                        <input type="number" id="viajantes" placeholder="Numero de viajantes" value="" min="1" max="10">
+                    </div>
+                    <input class="btn" type="button" value="Encontre agora">
+                </form>            
+            </section>
+            <!-- Conteudo do Banner acaba aqui -->
+
+            <!-- Conteudo da presentation começa aqui -->
+            <section class="about" id="about">
+                <div class="video-container" data-aos="fade-right" data-aos-delay="300">
+                    <video src="images/about-vid-1.mp4" muted autoplay loop class="video"></video>
+                    <div class="controls">
+                        <span class="control-btn" data-src="images/about-vid-1.mp4"></span>
+                        <span class="control-btn" data-src="images/about-vid-2.mp4"></span>
+                        <span class="control-btn" data-src="images/about-vid-3.mp4"></span>
+                    </div>
+                </div>
+                <div class="content" data-aos="fade-left" data-aos-delay="600">
+                    <span>Porque nos escolher?</span>
+                    <h3>A natureza espera por você</h3>
+                    <p>para conhecer o mundo, precisa dar um primeiro passo, então chegou a hora,</p> <p> viaje conosco e de um primeiro passo para a melhor experiencia da sua vida!</p>
+                    <a class="btn">Mais informações</a>
+                </div>
+            </section>
+
+            <!-- Conteudo do cronômetro-->
+            <div class="banner-cronometro">
+                <div class="content-cronometro" data-aos="zoom-in-up" data-aos-delay="300">
+                    <div class="title">
+                        <h1>Nossa promoção encerra em:</h1>
+                    </div>
+                    <div class="countdown">
+                        <div>
+                            <h1 id="dias">00</h1>
+                            <p>dias</p>
                         </div>
-                    </div>
-                
-                    <div class="content" data-aos="fade-left" data-aos-delay="600">
-                        <span>Porque nos escolher?</span>
-                        <h3>A natureza espera por você</h3>
-                        <p>para conhecer o mundo, precisa dar um primeiro passo, então chegou a hora,</p> <p> viaje conosco e de um primeiro passo para a melhor experiencia da sua vida!</p>
-                        <a class="btn">Mais informações</a>
-                    </div>
-                </section>
-
-                <!-- Conteudo do cronômetro-->
-
-                <div class="banner-cronometro">
-
-                    <div class="content-cronometro" data-aos="zoom-in-up" data-aos-delay="300">
-                      <div class="title">
-                          <h1>Nossa promoção encerra em:</h1>
-                      </div>
-
-                      <div class="countdown">
-                          <div>
-                              <h1 id="dias">00</h1>
-                              <p>dias</p>
-                          </div>
-                          <div>
+                        <div>
                             <h1 id="horas">00</h1>
                             <p>horas</p>
-                          </div>
-                          <div>
+                        </div>
+                            <div>
                             <h1 id="minutos">00</h1>
                             <p>minutos</p>
-                          </div>
-                          <div>
+                        </div>
+                        <div>
                             <h1 id="segundos">00</h1>
                             <p>segundos</p>
-                          </div>
-                      </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <!-- Conteudo do cronometro encerra aqui  -->                                       
+
+            <!-- Conteudo de destinação começa aqui -->
+            <section class="destination" id="destination">
+                <div class="heading">
+                    <span>Seu destino</span>
+                    <h1>marque seu destino</h1>
                 </div>
-                <!-- Conteudo do cronometro encerra aqui  -->                                       
-
-<!-- Conteudo de destinação começa aqui -->
-<section class="destination" id="destination">
-
-    <div class="heading">
-        <span>Seu destino</span>
-        <h1>marque seu destino</h1>
-    </div>
-
-    <div class="box-container">
-
-        <div class="box" data-aos="fade-up" data-aos-delay="150">
-            
-            <div class="image">
-                <img src="images/des-1.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Maldivas</h3>
-                <div class="price">R$4.000 <span>r$6.000</span></div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                <div class="box-container">
+                    <div class="box" data-aos="fade-up" data-aos-delay="150">
+                        <div class="image">
+                            <img src="images/des-1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Maldivas</h3>
+                            <div class="price">R$4.000 <span>r$6.000</span></div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <a href="#">saiba mais <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="box" data-aos="fade-up" data-aos-delay="300">
+                        <div class="image">
+                            <img src="images/des-2.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Cataratas do Iguaçu</h3>
+                            <div class="price">R$479.00 <span>r$629.99</span></div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            <a href="#">saiba mais <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="box" data-aos="fade-up" data-aos-delay="450">
+                        <div class="image">
+                            <img src="images/des-3.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Bora Bora</h3>
+                            <div class="price">R$1449.99 <span>r$1899.99</span></div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <a href="#">saiba mais <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="box" data-aos="fade-up" data-aos-delay="600">
+                        <div class="image">
+                            <img src="images/des-4.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>bali</h3>
+                            <div class="price">r$1299.99 <span>r$1500.00</span></div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            <a href="#">saiba mais <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="box" data-aos="fade-up" data-aos-delay="750">
+                        <div class="image">
+                            <img src="images/des-5.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Ibiza</h3>
+                            <div class="price">r$2100.99 <span>r$2500.00</span></div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <a href="#">saiba mais <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="box" data-aos="fade-up" data-aos-delay="900">
+                        <div class="image">
+                            <img src="images/des-6.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Canadá</h3>
+                            <div class="price">R$3375.000 <span>r$3500.00</span></div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <a href="#">saiba mais <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="box" data-aos="fade-up" data-aos-delay="1150">
+                        <div class="image">
+                            <img src="images/des-7.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Cancún (viagem romântica)<h3>
+                                <div class="price">R$4.915 <span>R$5200.99</span></div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <a href="#">saiba mais <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="box" data-aos="fade-up" data-aos-delay="1300">
+                        <div class="image">
+                            <img src="images/des-9.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Disney</h3>
+                            <div class="price">R$2.799,00 <span>r$2900.00</span></div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <a href="#">saiba mais <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="box" data-aos="fade-up" data-aos-delay="1300">
+                        <div class="image">
+                            <img src="images/des-10.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>muralha da china</h3>
+                            <div class="price">R$3500 <span>r$4459.99</span></div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <a href="#">saiba mais <i class="fas fa-angle-right"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <a href="#">saiba mais <i class="fas fa-angle-right"></i></a>
-            </div>
-        </div>
+        </section>
+        <!-- Conteudo de destinação termina aqui -->
 
-        <div class="box" data-aos="fade-up" data-aos-delay="300">
-            <div class="image">
-                <img src="images/des-2.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Cataratas do Iguaçu</h3>
-                <div class="price">R$479.00 <span>r$629.99</span></div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+        <!-- Início sessão galeria -->
+        <section id="gallery" class="gallery">
+            <div class="box-inside">
+                <div class="heading">
+                    <span>Nossa galeria</span>
+                    <h1>Memórias inesqueciveis</h1>
                 </div>
-                <a href="#">saiba mais <i class="fas fa-angle-right"></i></a>
-            </div>
-        </div>
+                <div class="box-container">
+                    <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+                        <img class="image-memories" src="images/gallery-img-1.jpg" alt="">
+                        <h3>iceland</h3>
+                    </div>
 
-        <div class="box" data-aos="fade-up" data-aos-delay="450">
-            <div class="image">
-                <img src="images/des-3.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Bora Bora</h3>
-                <div class="price">R$1449.99 <span>r$1899.99</span></div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                    <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+                        <img class="image-memories" src="images/gallery-img-2.jpg" alt="">
+                        <h3>greenland</h3>
+                    </div>
+
+                    <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+                        <img class="image-memories" src="images/gallery-img-3.jpg" alt="">
+                        <h3>canadá</h3>
+                    </div>
+
+                    <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+                        <img class="image-memories" src="images/gallery-img-4.jpg" alt="">
+                        <h3>thailand</h3>
+                    </div>
+
+                    <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+                        <img class="image-memories" src="images/gallery-img-5.jpg" alt="">
+                        <h3>brasil</h3>
+                    </div>
+
+                    <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+                        <img class="image-memories" src="images/gallery-img-6.jpg" alt="">
+                        <h3>maldivas</h3>
+                    </div>
+
+                    <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+                        <img class="image-memories" src="images/gallery-img-7.jpg" alt="">
+                        <h3>iceland</h3>
+                    </div>
+
+                    <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+                        <img class="image-memories" src="images/gallery-img-8.jpg" alt="">
+                        <h3>alaska</h3>
+                    </div>
+
+                    <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+                        <img class="image-memories" src="images/gallery-img-9.jpg" alt="">
+                        <h3>farm</h3>
+                    </div>
                 </div>
-                <a href="#">saiba mais <i class="fas fa-angle-right"></i></a>
+            </div>       
+        </section>
+        <!-- Fim da sessão galeria -->
+
+        <!-- Início Sessão de Contato -->
+        <section class="contact">
+            <h1 class="heading"> <span>fale</span> conosco </h1>
+            <div class="row">
+
+                <!-- iframe - permite inserir uma pagina dentro de uma box -->
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29276.363111143826!2d-46.88371138889647!3d-23.4768574223817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf03aaf6d062af%3A0x2c22de58cd7f17f1!2sAlphaville%2C%20Santana%20de%20Parna%C3%ADba%20-%20SP%2C%2006542-115!5e0!3m2!1spt-BR!2sbr!4v1640096190707!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+
+                <!-- Modificação no placeholder input, adicionado funcao required. --> <!-- Modificação por Wendel Ortiz. -->
+                <form action="" id="contact">
+                    <h3>Entre em contato</h3>
+                    <div class="inputBox">
+                        <span class="fas fa-user"></span>
+                        <input type="text" placeholder="Nome" required>
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-envelope"></span>
+                        <input type="email" placeholder="Ex: joaodasilva@gmail.com" required>
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-phone"></span>
+                        <input type="number" placeholder="Telefone" required>
+                    </div>
+                    <input type="submit" value="Contate agora" class="button">
+                </form>
+            </div>
+        </section>
+        <!-- contatos section termina aqui -->
+
+        <!-- modal de cadastro -->
+        <div id="modal-promocao" class="modal-container">
+            <div class="modal">
+                <button class="fechar">x</button>
+                <h3 class="subtitulo">Não tem uma conta?</h3>
+                <form>
+                    <input type="text" class="input" placeholder="Nome">
+                    <input type="text" class="input" placeholder="Email">
+                    <input type="button" value="cadastrar" class="button">
+                </form>
             </div>
         </div>
+        <!-- modal de cadastro termina aqui-->
 
-        <div class="box" data-aos="fade-up" data-aos-delay="600">
-            <div class="image">
-                <img src="images/des-4.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>bali</h3>
-                <div class="price">r$1299.99 <span>r$1500.00</span></div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+        <!-- Rodapé da página. -->  <!-- Adicionado por Wendel Ortiz. -->
+        <div class="rodape-box">
+            <footer>
+                <div class="samuel">
+                    <span>Desenvolvido por <a class="name-modif" href="https://github.com/samuel-santinelli" target="_blank">Samuel Santinelli</a></span><br>
                 </div>
-                <a href="#">saiba mais <i class="fas fa-angle-right"></i></a>
-            </div>
+                <span>Contribuição por <a class="name-modif" href="https://github.com/0ortiz" target="_blank">Wendel Ortiz</a></span>
+            </footer>
         </div>
-
-        <div class="box" data-aos="fade-up" data-aos-delay="750">
-            <div class="image">
-                <img src="images/des-5.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Ibiza</h3>
-                <div class="price">r$2100.99 <span>r$2500.00</span></div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href="#">saiba mais <i class="fas fa-angle-right"></i></a>
-            </div>
-        </div>
-
-        <div class="box" data-aos="fade-up" data-aos-delay="900">
-            <div class="image">
-                <img src="images/des-6.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Canadá</h3>
-                <div class="price">R$3375.000 <span>r$3500.00</span></div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href="#">saiba mais <i class="fas fa-angle-right"></i></a>
-            </div>
-        </div>
-
-        <div class="box" data-aos="fade-up" data-aos-delay="1150">
-            <div class="image">
-                <img src="images/des-7.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Cancún (viagem romântica)<h3>
-                    <div class="price">R$4.915 <span>R$5200.99</span></div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href="#">saiba mais <i class="fas fa-angle-right"></i></a>
-            </div>
-        </div>
-
-        <div class="box" data-aos="fade-up" data-aos-delay="1300">
-            <div class="image">
-                <img src="images/des-9.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Disney</h3>
-                <div class="price">R$2.799,00 <span>r$2900.00</span></div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href="#">saiba mais <i class="fas fa-angle-right"></i></a>
-            </div>
-        </div>
-
-        <div class="box" data-aos="fade-up" data-aos-delay="1300">
-            <div class="image">
-                <img src="images/des-10.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>muralha da china</h3>
-                <div class="price">R$3500 <span>r$4459.99</span></div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <a href="#">saiba mais <i class="fas fa-angle-right"></i></a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-<!-- Conteudo de destinação termina aqui -->
-
-<section id="gallery" class="gallery">
-
-    <div class="heading">
-        <span>Nossa galeria</span>
-        <h1>Memórias inesqueciveis</h1>
-    </div>
-    
-    <div class="box-container">
-
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
-            <img class="image-memories" src="images/gallery-img-1.jpg" alt="">
-            <h3>iceland</h3>
-        </div>
-
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
-            <img class="image-memories" src="images/gallery-img-2.jpg" alt="">
-            <h3>greenland</h3>
-        </div>
-
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
-            <img class="image-memories" src="images/gallery-img-3.jpg" alt="">
-            <h3>canadá</h3>
-        </div>
-
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
-            <img class="image-memories" src="images/gallery-img-4.jpg" alt="">
-            <h3>thailand</h3>
-        </div>
-
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
-            <img class="image-memories" src="images/gallery-img-5.jpg" alt="">
-            <h3>brasil</h3>
-        </div>
-
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
-            <img class="image-memories" src="images/gallery-img-6.jpg" alt="">
-            <h3>maldivas</h3>
-        </div>
-
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
-            <img class="image-memories" src="images/gallery-img-7.jpg" alt="">
-            <h3>iceland</h3>
-        </div>
-
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
-            <img class="image-memories" src="images/gallery-img-8.jpg" alt="">
-            <h3>alaska</h3>
-        </div>
-
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
-            <img class="image-memories" src="images/gallery-img-9.jpg" alt="">
-            <h3>farm</h3>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- gallery section ends -->
-
-<!-- contatos section inicia aqui -->
-
-<section class="contact" id="contact">
-
-    <h1 class="heading"> <span>fale</span> conosco </h1>
-
-    <div class="row">
-
-        <!-- iframe - permite inserir uma pagina dentro de uma box -->
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29276.363111143826!2d-46.88371138889647!3d-23.4768574223817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf03aaf6d062af%3A0x2c22de58cd7f17f1!2sAlphaville%2C%20Santana%20de%20Parna%C3%ADba%20-%20SP%2C%2006542-115!5e0!3m2!1spt-BR!2sbr!4v1640096190707!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
-
-        <form action="">
-            <h3>Entre em contato</h3>
-            <div class="inputBox">
-                <span class="fas fa-user"></span>
-                <input type="text" placeholder="nome">
-            </div>
-            <div class="inputBox">
-                <span class="fas fa-envelope"></span>
-                <input type="email" placeholder="email">
-            </div>
-            <div class="inputBox">
-                <span class="fas fa-phone"></span>
-                <input type="number" placeholder="telefone">
-            </div>
-            <input type="submit" value="contate agora" class="button">
-        </form>
-
-    </div>
-
-</section>
-
-<!-- contatos section termina aqui -->
-            
-<!-- modal de cadastro -->
-<div id="modal-promocao" class="modal-container">
-    <div class="modal">
-        <button class="fechar">x</button>
-        <h3 class="subtitulo">Não tem uma conta?</h3>
-        <form>
-     
-            <input type="text" class="input" placeholder="Nome">
-            <input type="text" class="input" placeholder="Email">
-            <input type="button" value="cadastrar" class="button">
-        </form>
-    </div>
-</div>
-
-<!-- modal de cadastro termina aqui-->
-            <footer></footer>
-        </body>
-    <script src="src/main.js" defer>
-        
-    </script>
+        <!-- Fim do Rodapé. -->
+    </body>
+    <script src="src/main.js" defer></script>
 </html>
